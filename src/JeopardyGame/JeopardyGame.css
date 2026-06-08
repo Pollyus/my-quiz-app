@@ -1,0 +1,242 @@
+/* src/JeopardyGame/JeopardyGame.css */
+.jeopardy-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 15px;
+  gap: 15px;
+  background-color: #f0f2f5;
+}
+
+/* Боковая панель команд */
+.sidebar {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.team-card {
+  flex: 1; /* Равномерно распределяет карточки команд по высоте */
+  border: 2px solid #bdc3c7;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.team-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.score {
+  font-size: 32px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin: 5px 0;
+}
+
+.score-controls {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.score-btn {
+  flex: 1;
+  padding: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.score-btn.plus {
+  background-color: #2ecc71;
+}
+
+.score-btn.minus {
+  background-color: #e74c3c;
+}
+
+.score-btn:hover {
+  opacity: 0.9;
+}
+
+.score-btn:active {
+  transform: scale(0.95);
+}
+
+/* Игровое поле */
+.board {
+  display: flex;
+  flex-grow: 1;
+  gap: 12px;
+  height: 100%;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.header-card {
+  height: 12%; /* Пропорциональный размер заголовков */
+  background-color: #34495e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.question-card {
+  flex: 1; /* Карточки занимают всю оставшуюся высоту экрана */
+  border: 2px solid #bdc3c7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  background-color: white;
+  font-weight: bold;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.question-card:hover:not(.visited) {
+  background-color: #e8f4fd;
+  border-color: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(52, 152, 219, 0.2);
+}
+
+.question-card.visited {
+  background-color: #eaeded;
+  border-color: #d5dbdb;
+  color: #bdc3c7;
+  cursor: default;
+}
+
+/* Модальное окно */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 62, 80, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-text {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.answer-text {
+  color: #27ae60;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ebf7ee;
+  border-radius: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+/* Начисление очков внутри модального окна */
+.modal-scoring {
+  margin-top: 30px;
+  border-top: 2px solid #ecf0f1;
+  padding-top: 20px;
+}
+
+.modal-scoring h4 {
+  margin: 0 0 15px 0;
+  color: #7f8c8d;
+}
+
+.mod
+al-teams-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-team-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
