@@ -40,7 +40,7 @@ const JeopardyGame = () => {
     { id: 1, name: 'Team 1', score: 0, color: '#ffcccc' },
     { id: 2, name: 'Team 2', score: 0, color: '#ffe6cc' },
     { id: 3, name: 'Team 3', score: 0, color: '#fff9cc' },
-    { id: 4, name: 'Team 4', score: 0, color: '#e6ffcc' },
+    // { id: 4, name: 'Team 4', score: 0, color: '#e6ffcc' },
   ]);
 
   const [activeQuestion, setActiveQuestion] = useState(null);
