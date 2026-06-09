@@ -8,38 +8,38 @@ const initialData = [
     questions: [
       { id: 1, value: 100, q: "Кем я мечтала стать в детстве (профессия)?", a: "Няня" },
       { id: 2, value: 200, q: "Какой был мой любимый мультфильм в детстве?", a: "Бременские музыканты/Лило и Стич" },
-      { id: 3, value: 300, q: "Сколько мне было лет, когда я впервые выпила алкоголь с друзьями", a: "Brasilia" },
-      { id: 4, value: 400, q: "Capital of Canada?", a: "Ottawa" },
-      { id: 5, value: 500, q: "Capital of Australia?", a: "Canberra" },
+      { id: 3, value: 300, q: "Сколько мне было лет, когда я впервые выпила алкоголь с друзьями", a: "16" },
+      { id: 4, value: 400, q: "Мой нелюбимый школьный предмет", a: "География" },
+      { id: 5, value: 500, q: "Сколько городов России я посетила (Считаем только крупные и время нахождение в городе более суток)", a: "10" },
     ]
   },
   {
     category: "Привычки и вкусы",
     questions: [
       { id: 6, value: 100, q: "Какой мой самый любимый вид кухни (или конкретное блюдо)", a: "Грузинская кухня" },
-      { id: 7, value: 200, q: "Homer's favorite drink?", a: "Duff Beer" },
-      { id: 8, value: 300, q: "The town they live in?", a: "Springfield" },
-      { id: 9, value: 400, q: "Lisa's instrument?", a: "Saxophone" },
-      { id: 10, value: 500, q: "The creator of the show?", a: "Matt Groening" },
+      { id: 7, value: 200, q: "Любимая форма моего имени", a: "Полинка" },
+      { id: 8, value: 300, q: "Нелюбимый жанр в кино", a: "Ужасы" },
+      { id: 9, value: 400, q: "Какую машину я бы себе хотела (+100 баллов за цвет)", a: "Nissan Juke красный" },
+      { id: 10, value: 500, q: "Мой типаж", a: "Лучший друг главного героя" },
     ]
   },
   {
     category: "Мечты и секреты",
     questions: [
-      { id: 11, value: 100, q: "", a: "Steven Spielberg" },
+      { id: 11, value: 100, q: "Мое НЕлюбимое женское имя", a: "Марина" },
       { id: 12, value: 200, q: "Мой самый бесполезный, но забавный талант/умение? ", a: "Перевернуть язык" },
       { id: 13, value: 300, q: "Мой краш", a: "Павел Дуров/Дима Маслеников" },
-      { id: 14, value: 400, q: "Year of the first Star Wars movie?", a: "1977" },
-      { id: 15, value: 500, q: "Won Best Picture in 2020?", a: "Parasite" },
+      { id: 14, value: 400, q: "Мое хобби, которого я стесняюсь", a: "Изучение турецкого" },
+      { id: 15, value: 500, q: "Имя, которое тут же может вывести меня из себя", a: "Магид / Любое имя вашего бывшего" },
     ]
   }
 ];
 
 const JeopardyGame = () => {
   const [teams, setTeams] = useState([
-    { id: 1, name: 'Team 1', score: 0, color: '#ffcccc' },
-    { id: 2, name: 'Team 2', score: 0, color: '#ffe6cc' },
-    { id: 3, name: 'Team 3', score: 0, color: '#fff9cc' },
+    { id: 1, name: 'Люба', score: 0, color: '#F4FCAB' },
+    { id: 2, name: 'Кристинна', score: 0, color: '#EBA0C0' },
+    { id: 3, name: 'Аэлита', score: 0, color: '#95DBAF' },
     // { id: 4, name: 'Team 4', score: 0, color: '#e6ffcc' },
   ]);
 
