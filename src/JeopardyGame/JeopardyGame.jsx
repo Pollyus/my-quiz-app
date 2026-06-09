@@ -4,19 +4,19 @@ import './JeopardyGame.css';
 
 const initialData = [
   {
-    category: "World Capitals",
+    category: "Мое прошлое",
     questions: [
-      { id: 1, value: 100, q: "Capital of France?", a: "Paris" },
-      { id: 2, value: 200, q: "Capital of Japan?", a: "Tokyo" },
-      { id: 3, value: 300, q: "Capital of Brazil?", a: "Brasilia" },
+      { id: 1, value: 100, q: "Кем я мечтала стать в детстве (профессия)?", a: "Няня" },
+      { id: 2, value: 200, q: "Какой был мой любимый мультфильм в детстве?", a: "Бременские музыканты/Лило и Стич" },
+      { id: 3, value: 300, q: "Сколько мне было лет, когда я впервые выпила алкоголь с друзьями", a: "Brasilia" },
       { id: 4, value: 400, q: "Capital of Canada?", a: "Ottawa" },
       { id: 5, value: 500, q: "Capital of Australia?", a: "Canberra" },
     ]
   },
   {
-    category: "The Simpsons",
+    category: "Привычки и вкусы",
     questions: [
-      { id: 6, value: 100, q: "Father of the family?", a: "Homer" },
+      { id: 6, value: 100, q: "Какой мой самый любимый вид кухни (или конкретное блюдо)", a: "Грузинская кухня" },
       { id: 7, value: 200, q: "Homer's favorite drink?", a: "Duff Beer" },
       { id: 8, value: 300, q: "The town they live in?", a: "Springfield" },
       { id: 9, value: 400, q: "Lisa's instrument?", a: "Saxophone" },
@@ -24,11 +24,11 @@ const initialData = [
     ]
   },
   {
-    category: "Movies",
+    category: "Мечты и секреты",
     questions: [
-      { id: 11, value: 100, q: "Who directed 'Jaws'?", a: "Steven Spielberg" },
-      { id: 12, value: 200, q: "First Disney feature film?", a: "Snow White" },
-      { id: 13, value: 300, q: "Hobbit's name in Lord of the Rings?", a: "Frodo" },
+      { id: 11, value: 100, q: "", a: "Steven Spielberg" },
+      { id: 12, value: 200, q: "Мой самый бесполезный, но забавный талант/умение? ", a: "Перевернуть язык" },
+      { id: 13, value: 300, q: "Мой краш", a: "Павел Дуров/Дима Маслеников" },
       { id: 14, value: 400, q: "Year of the first Star Wars movie?", a: "1977" },
       { id: 15, value: 500, q: "Won Best Picture in 2020?", a: "Parasite" },
     ]
